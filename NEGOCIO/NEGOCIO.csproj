@@ -51,13 +51,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="login_N.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DATOS\DATOS.csproj">
       <Project>{0402f5cd-b08a-4a4a-82fc-e2dc2a33f31c}</Project>
       <Name>DATOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENTIDAD\ENTIDAD.csproj">
+      <Project>{6d405fae-a702-4d02-b7ad-dbad5941d858}</Project>
+      <Name>ENTIDAD</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrodeEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrodeEmpleado.Designer.cs">
+      <DependentUpon>RegistrodeEmpleado.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio.resx">
+      <DependentUpon>inicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -72,7 +90,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegistrodeEmpleado.resx">
+      <DependentUpon>RegistrodeEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -92,10 +114,333 @@
       <Project>{0402f5cd-b08a-4a4a-82fc-e2dc2a33f31c}</Project>
       <Name>DATOS</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ENTIDAD\ENTIDAD.csproj">
+      <Project>{6d405fae-a702-4d02-b7ad-dbad5941d858}</Project>
+      <Name>ENTIDAD</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NEGOCIO\NEGOCIO.csproj">
       <Project>{49180f19-eb71-4cac-bf85-6a00d4d65bae}</Project>
       <Name>NEGOCIO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\07.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64px-Calculator_Vista_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acces.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\access.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acerca_de.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra of.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra of1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra offff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbbbbbbbbb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cli1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cliente1.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cliente1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLOSE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer alt 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer alt 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer alt 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desert.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\directory555.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escribir-pluma-libro-tinta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escribir-pluma-libro-tinta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factura5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICONGROUP_22-64x64.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICONGROUP_223-48x48.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen777.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ju.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KEY2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lapices_de_colores_muralesyvinilos_14089532__Monthly_XXL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lapices-de-colores-10092.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mi logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\offffff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palabra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pc2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pc3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pc5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pc11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power - Lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power - Lock1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power - Lock2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power - Lock3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power - Lock4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\progress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repoo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\si.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\us1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Videoluz0754.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vista %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vista %2873%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vista %2873%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vista %2873%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\win8_metro_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\word.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\word1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\www3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wwww.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PRESENTACION.jpg" />
+    <None Include="Resources\PRESENTACION1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
